@@ -6,8 +6,10 @@ print('Terve', name)
 
 sade=float(input('Anna ympyrän säde:'))
 
-pinta_ala=3.14*sade*sade
-print('Pinta-ala:', pinta_ala)
+import math
+
+pinta_ala=math.pi*sade**2
+print(f'Ympyrän pinta-ala on {pinta_ala:.2f}')
 
 kanta=float(input('Anna kannan:'))
 korkeus=float(input('Anna korkeuden:'))
@@ -15,8 +17,8 @@ korkeus=float(input('Anna korkeuden:'))
 piiri=2*kanta+2*korkeus
 pinta_ala=kanta*korkeus
 
-print('Piiri:',piiri)
-print('Pinta-ala:',pinta_ala)
+print(f'Suorakulmion piiri on {piiri:.2f}')
+print(f'Suorakulmion pinta-ala on {pinta_ala:.2f}')
 
 luku1=int(input('Anna ensimmäinen luku:'))
 luku2=int(input('Anna toinen luku:'))
@@ -26,9 +28,9 @@ summa=luku1+luku2+luku3
 tulo=luku1*luku2*luku3
 keskiarvo=summa/3
 
-print('Lukujen summa:',summa)
-print('Lukujen tulo:',tulo)
-print('Lukujen keskiarvo:',keskiarvo)
+print(f'Lukujen summa on {summa:.1f}')
+print(f'Lukujen tulo on {tulo:.1f}')
+print(f'Lukujen keskiarvo on {keskiarvo:.1f}')
 
 leiviska=float(input('Anna leiviskät:'))
 naula=float(input('Anna naulat:'))
