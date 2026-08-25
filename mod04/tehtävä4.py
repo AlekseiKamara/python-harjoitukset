@@ -1,2 +1,2 @@
 pituus=input('Mikä on kuhan pituus:')
-print('Kuhan pituus', pituus)
+print(f'Kuhan pituus on {pituus}!')

@@ -36,12 +36,12 @@ leiviska=float(input('Anna leiviskät:'))
 naula=float(input('Anna naulat:'))
 luotit=float(input('Anna luodit:'))
 
-grammat=leiviska*20*32.4+naula*32.4+luotit*1.0
+naulat=leiviska*20+naula
+luotit=naulat*32+luotit
 
-kilogrammat=int(grammat//1000)
-grammat=int(grammat%1000)
+massa_g=luotit*13.3
 
-print('Paino on',kilogrammat,'kg ja',grammat,'g')
+print(f'Massa nykymittojen mukaan:{massa_g//1000} kiloa ja {massa_g %1000} gramma.')
 
 import random
 
