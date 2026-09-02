@@ -39,6 +39,7 @@ print(f'Suurin luku on {suurin}')
 ############################
 #tehtävä 4
 
+import math
 import random
 
 oikea_numero=random.randint(1,10)
@@ -76,5 +77,20 @@ while kokeilut<5:
 
 import random
 
-maara=int(input('Anna pisteiden määrä:'))
+N=1000
+n=0
+counter=0
 
+while counter<N:
+    x=random.uniform(-1,1)
+    y=random.uniform(-1,1)
+    print(f'{counter} Arvotun pisteen koordinaatit ovat, x={x}, y={y}')
+    counter+=1
+    if x**2+y**2<1:
+        n+=1
+        print('Piste on ympyrän sisällä')
+print(f'Pisteitä arvottu yhteensä {N}, joista ympyrän sisälle osui {n} kpl.')
+
+import math
+pi=4*n/N
+print(f'piin likiarvo on {pi}')
