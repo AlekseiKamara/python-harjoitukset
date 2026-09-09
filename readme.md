@@ -14,4 +14,7 @@ Tein tehtävät 1, 2, 3, 4, 5, 6 ja projektikansion.
 Tein tehtävät 1,2,3 ja 4
 
 ## Moduuli 5
-Tein tehtävät 1,2,3 ja 4, 5 ja projekti
+Tein tehtävät 1,2,3,4,5,6 ja projekti
+
+## Moduuli 6
+Tein tehtävät 2
