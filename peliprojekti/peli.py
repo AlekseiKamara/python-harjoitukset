@@ -7,19 +7,35 @@ else:
     print(f'Hauska tavata {nimi}!')
     print(f'Ikäsi on {ikä}!')
 
-    komento=''
+inventaario=[]
+def tervetuloa():
+    print(f'Hei {nimi}! Tervetuloa pelaaman oma peliä!')
+def ohjeet():
+    print('Peli ei ole tarjoitettu alle 12 vuotiaille')
+    print('Lue tarkasti ohjeet ja säänöt ennen pelin alkamista')
+def lisaa_esine():
+    esine=input('Anna jokin esine:')
+    inventaario.append(esine)
 
-    while komento !='lopeta':
+def nayta_inventaario():
+    print(inventaario)
+
+komento=''
+
+while komento !='lopeta':
         print('Päävalikko:')
         print('1 - Tervetuloa ja alkusanat')
         print('2 - Yleiset ohjeet')
+        print('3 - Lisää esineen inventaarion')
+        print('4 - Näytä oma inventaariota')
         print('lopeta - Lopeta pelin')
 
         komento=input('Valitse jonkin komennon: ')
         if komento=='1':
-            print(f'Hei {nimi}! Tervetuloa pelaamaan peliä. Toivottavasti peli herättää jonkinlaisen kiinnostuksen')
-
+            tervetuloa()
         if komento=='2':
-            print('Peli ei ole tarkoitettu alle 12-vuotiaille. Lue tarkasti ohjeet ja keskeiset säännöt!')
-
-
+           ohjeet()
+        if komento=='3':
+            lisaa_esine()
+        if komento=='4':
+            nayta_inventaario()
