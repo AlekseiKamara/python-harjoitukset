@@ -1,0 +1,22 @@
+Päävalikoima:
+
+1 - Katso huonetta
+2 - liikkua
+3 - Ota esine
+4 - Näytä inventaario
+5 - Talenna peli
+lopeta - Lopeta peli
+
+Katso huoneita jotta näet mitä esineitä huonessa on.
+
+Likkuessa voit siirtyä toiseen huoneeseen
+
+Ota esine huoneesta eli voit ottaa esineen huoneesta jos sellainen on
+
+Näytä inventaario voit nähdä mitä sinulla on inventaariossa
+
+Tallena pelin eli voit tallentaa oman pelin
+
+Samalla voit jatkaa tallennettua peliä kun käynnistät peliä uudelleen
+
+Tavoitteena on löytää reitti vankilan pihalle ja päästä pois
