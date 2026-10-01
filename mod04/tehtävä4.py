@@ -6,7 +6,7 @@ if pituus<37:
 else:
     print('Kuhan voi ottaa talteen!')
 
-hytti=input('Anna hyttiluokka (LUX, A, B, C):')
+hytti=input('Anna haluamasi hyttiluokka (LUX, A, B, C):')
 if hytti=='LUX':
     print('Parvekkeellinen hytti yläkannella')
 elif hytti=='A':

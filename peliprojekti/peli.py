@@ -169,7 +169,7 @@ def tallenna_peli(pelaaja):
         print('Tallenus epäonnistui!')
     except IOError:
         print('Tiedostossa tapahtui virhe!')
- 
+#Peliin lataaminen 
 def lataa_peli():
     try:
        
