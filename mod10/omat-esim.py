@@ -856,7 +856,7 @@ tulos=kolmekertainenluku(4)
 print(tulos)'''
 
 
-def on_parillinen(kokonaisluku):
+'''def on_parillinen(kokonaisluku):
     if kokonaisluku %2==0:
         return True
     else:
@@ -865,8 +865,59 @@ def on_parillinen(kokonaisluku):
 opiskelija = {
     "nimi": "Matti",
     "ika": 22,
-    "kurssi": "Python"
-}
+    "kurssi": "Python"'''
+
+'''luvut = [3, 8, 5, 12, 7, 10]
+
+for luku in luvut:
+    if luku % 2 == 0:
+        print(luku)'''
+
+'''def laske_summa(kokonaislukuja):
+    summa=0
+    for luku in kokonaislukuja:
+        luku=luku+summa
+        return luku
+tulos=laske_summa([2, 4, 6])
+print(tulos)'''
+
+'''for i in range(1, 5):
+    print(i)'''
+
+'''luvut = [4, 7, 12, 3, 18, 5, 20]
+maara=0
+for luku in luvut:
+    if luku >10:
+        luku=maara+maara
+        print(maara)
+        print(luku)'''
+
+'''luku=int(input('Anna luku'))
+while luku ==0:
+
+luku=int(input('Anna luku uudestaan'))'''
+
+'''luvut = [2, 7, 8, 11, 14, 5]
+
+def laske_parilliset(luvut):
+    maara=0
+    for luku in luvut:
+        if luku %2==0:
+            maara+=1
+    return maara
+tulos = laske_parilliset(luvut)
+print(tulos)'''
+
+'''def calculate_trypic(number):
+    return number **3
+
+result=calculate_trypic(4)
+print(result)'''
+
+'''luku=
+for i in range(5)'''
+
+
 
 
 

@@ -9,7 +9,7 @@ Erilaiset esineet voivat auttaa sinua pakeneeman.
 
 Pelaajan tavoiteena on löytää tarvittavat esineet ja päästä niiden avulla vankilan pihalla. Pelissä voi olla useampi tapa päästä ulos esimerkiksi avaimen tai ruuvinmeisselin avulla.
 
-Pelissä on erilaisia reittiä joita voi edetä ensimmäinen eli helpoin on vankiselli, käytävä ja piha, siihen tarvitaan avaimen, joka voi saada vanisellista.
+Pelissä on erilaisia reittiä joita voi edetä ensimmäinen eli helpoin on vankiselli, käytävä ja piha, siihen tarvitaan avaimen, joka voi saada vankisellista.
 
 Seuraava vankiselli, käytävä, varasto, valvomo ja piha. Siihen tarvitaan ruuvimeisseliä, jonka voi saada varastossa.
 

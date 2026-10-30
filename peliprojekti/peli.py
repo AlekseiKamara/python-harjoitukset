@@ -35,6 +35,7 @@ if numero == 1:
 else:
     ruuvimeisseli.kunto='Vanha'
 
+# Tässä None tarkoittaa, että huoneessa ei ole esinettä
 vanki_selli=Huone('Vankiselli', avain)
 kaytava=Huone('Kaytava', vesipullo)
 varasto=Huone('Varasto', ruuvimeisseli)
@@ -50,7 +51,7 @@ print('Tavoiteena on päästä pois vankilasta!')
 def katso_huonetta(huone):
 
     print()
-
+    # Tässä None meinnaa, että jos huoneen esine ei ole None, niin huoneessa on esine.
     if huone.esine != None:
         print(f'Tässä huoneessa on esine: {huone.esine.nimi}.')
         if huone.esine.nimi == 'Ruuvimeisseli':
@@ -61,12 +62,12 @@ def katso_huonetta(huone):
     print()
 
 def ota_esine(pelaaja):
-    if pelaaja.sijainti.esine != None:
+    if pelaaja.sijainti.esine != None: #Onko pelaajan nykyisessä huoneessa esinettä
         esine=pelaaja.sijainti.esine
         pelaaja.inventaario.append(esine)
-        pelaaja.sijainti.esine=None
+        pelaaja.sijainti.esine=None # Poistaa esineen huoneesta, jos pelaaja ottaa sen
         print(f'Otit esineen: {esine.nimi}.')
-        return True
+        return True # Palauttaa True, jos esine otettiin inventaarioon.
     else:
         print('Tässä huoneessa ei ole esinettä.')
         return False
@@ -150,7 +151,7 @@ def liiku(pelaaja):
             else:
                 print('Et voi avata ovea!')
                 print('Tarvitset ruuvimeisselin!')
-# Tallentaa pelaajan tiedot save.json tiedostoon
+# Tallentaa pelaajan tiedot save.json tiedostoon ja sanakirjaan pelaajan nimi, ikä, huone ja inventaario.
 def tallenna_peli(pelaaja):
     print('Tallennetaan peli...')
     try:
@@ -184,12 +185,13 @@ def lataa_peli():
 jatka=input('Haluatko jatkaa tallennetusta pelistä? Kyllä/ei:')
 
 if jatka == 'kyllä':
+    # Tässä dataa lataa pelin ja tallentaa jokaisen esineen ja huoneen pelaajan tietoihin.
     data=lataa_peli()
-    if data != None:
+    if data != None: 
         pelaaja.nimi=data['nimi']
         pelaaja.ika=data['ika']
 
-        for nimi in data['esineet']:
+        for nimi in data['esineet']: # Haetaan pelaajan tiedot sanakirjasta.
             if nimi == 'Avain':
                 pelaaja.inventaario.append(avain)
             elif nimi == 'Ruuvimeisseli':
