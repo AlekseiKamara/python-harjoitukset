@@ -8,3 +8,14 @@
 - tehtävä 6 (3 pistettä)
 
 Yhteensä: 12 pistettä!
+
+**Mod03**
+
+*Tein tehtävät:*
+- tehtävät 1 (2 piste)
+- tehtävä 2 (2 pistettä)
+- tehtävä 3 (2 pistettä)
+- tehtävä 4 (2 pistettä)
+- tehtävä 5 (2 pistettä)
+
+Yhteensä: 10 pistettä!
